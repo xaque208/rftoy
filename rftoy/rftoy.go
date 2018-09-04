@@ -28,7 +28,6 @@ func (t *RFToy) call(sid int, turn string) {
 	client := &http.Client{}
 
 	req.URL.RawQuery = q.Encode()
-	fmt.Println(req.URL.String())
 	client.Do(req)
 }
 
